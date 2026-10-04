@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    color: white;
+    font-family: monospace;
+}
+
+.vm {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#screen {
+    flex: 1;
+
+    margin: 20px;
+    background: #000;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #555;
+}
+
+#terminal {
+    height: 180px;
+
+    background: #050505;
+    border-top: 1px solid #333;
+
+    padding: 12px;
+
+    overflow-y: auto;
+}
+
+#output {
+    white-space: pre-wrap;
+}
+
+.input-line {
+    display: flex;
+    gap: 8px;
+}
+
+.input-line span {
+    color: #aaa;
+}
+
+#command {
+    flex: 1;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+}
